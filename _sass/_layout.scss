@@ -24,7 +24,7 @@
 }
 
 .site-nav {
-    float: right;
+    float: left;
     line-height: 56px;
 
     .menu-icon {
@@ -198,7 +198,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -232,5 +232,38 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.content {
+    float: right;
+    width: calc(70% - 30px);
+    padding-left: 30px;
+
+    @include media-query($on-laptop) {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+
+    @include media-query($on-laptop) {
+        width: 100%;
+    }
+
+    h3.name {
+        margin-top: 15px;
+        font-size: 14pt;
+    }
+
+    p.bio {
+        font-size: 11pt;
+    }
+
+    p.rss-subscribe {
+        font-size: 9pt;
     }
 }

@@ -20,8 +20,6 @@ Ini adalah masalah yang sering ditemui oleh para programmer website/web develope
 
 Seringkali programmer web/web developer saat melakukan _coding di komputer atau laptop, kebanyakan masih menggunakan sistem operasi Microsoft Windows. Sedangkan web hosting/server yang digunakan menggunakan sistem operasi Linux. Tentu ada banyak perbedaan diantara dua sistem operasi ini._
 
-[caption id="attachment\_2520" align="aligncenter" width="700"] [![Server Rack (Source: http://www.pangeic.com)](/wp-content/uploads/web-server-rack-700x525.jpg) Server Rack (Source: http://www.pangeic.com)[/caption]](http://yohang.net/wp-content/uploads/web-server-rack.jpg)
-
 Diantara error/fungsi yang sering tidak berjalan adalah masalah _upload file. Di Windows, masalah hak akses user untuk melakukan baca dan tulis (read & write file permission) ini tidak terlalu ketat. Sedangkan di Linux, hak akses sangat ketat demi keamanan._
 
 Kemudian masalah sensitifitas huruf kapital, baik penamaan **file, class object, dsb. Di Windows, penggunaan huruf kapital ini tidak terlalu berpengaruh. Misal, file bernama `foto.jpg dan Foto.jpg tetap akan dianggap sama. Sedangkan di Linux, akan dianggap dua file yang berbeda.`**
@@ -30,7 +28,7 @@ Masalah modul-modul webserver/PHP yang digunakan juga seringkali jadi masalah. S
 
 Konfigurasi dan versi software web server (Apache/Nginx, PHP, MySQL, dsb) juga seringkali berbeda antara di lokal saat development dan saat live di web hosting/server.
 
-### Solusinya?  
+### Solusinya?
 Untuk menghindari masalah-masalah yang muncul akibat perbedaan sistem ini, usahakan saat _ coding kita menggunakan sistem dan konfigurasi yang sama/mirip dengan sistem di web hosting/server live nantinya. Jika server yang nanti akan digunakan menggunakan Linux, maka sebaiknya kita juga coding dan testing dengan Linux.
 
 Jika sistem operasi utama di komputer/laptop kita adalah Windows, kita bisa menggunakan software virtualisasi seperti Virtual Box, VMware, dsb. Memang sedikit repot ketika kita harus melakukan instalasi OS, Apache, PHP, MySQL sendiri di Linux dibandingkan menggunakan paket XAMPP/WAMP di Windows. Tapi ini menjadi nilai tambah knowledge dan experience kita. Kita bisa lebih tahu dimana error terjadi, apakah di source code atau di konfigurasi web server, sehingga lebih cepat penangangannya.

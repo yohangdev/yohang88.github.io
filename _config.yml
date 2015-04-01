@@ -14,3 +14,6 @@ github_username:  yohang88
 markdown: kramdown
 
 permalink: :title.html
+
+paginate: 10
+paginate_path: "/page/:num"
